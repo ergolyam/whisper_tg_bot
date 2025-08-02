@@ -8,7 +8,7 @@ Telegram bot and user bot that utilizes the Whisper model for transcription of v
 3. **Download Dependencies**: Download the required dependencies into the Virtual Env `venv` using `pip`.
 
 ```shell
-git clone https://github.com/grisha765/whisper_tg_bot.git
+git clone https://github.com/ergolyam/whisper_tg_bot.git
 cd whisper_tg_bot
 python -m venv .venv
 .venv/bin/python -m pip install uv
@@ -43,7 +43,7 @@ python -m venv .venv
 
 - Pull container:
     ```bash
-    podman pull ghcr.io/grisha765/whisper_tg_bot:latest
+    podman pull ghcr.io/ergolyam/whisper_tg_bot:latest
     ```
 
 - Deploy in container as bot:
@@ -56,7 +56,7 @@ python -m venv .venv
     -e TG_TOKEN="your_telegram_bot_token" \
     -e MODEL_SIZE="tiny" \
     -e CPU_THREADS="4" \
-    ghcr.io/grisha765/whisper_tg_bot:latest
+    ghcr.io/ergolyam/whisper_tg_bot:latest
     ```
 
 - Deploy in container as user bot:
@@ -72,7 +72,7 @@ python -m venv .venv
     -e TG_HASH="your_telegram_api_hash" \
     -e MODEL_SIZE="tiny" \
     -e CPU_THREADS="4" \
-    ghcr.io/grisha765/whisper_tg_bot:latest
+    ghcr.io/ergolyam/whisper_tg_bot:latest
     ```
 *use MODE="mixed" to combine modes*
 
